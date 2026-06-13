@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div style="padding:20px;">
+  <h2>Admin Login</h2>
+
+  <input id="pass" placeholder="Enter Password">
+  <button class="btn" onclick="login()">Login</button>
+
+  <div id="panel" style="display:none;">
+    <h3>Admin Dashboard</h3>
+    <p>Welcome Admin</p>
+  </div>
+</div>
+
+<script>
+function login(){
+  let p = document.getElementById("pass").value;
+  if(p === "1234"){
+    document.getElementById("panel").style.display="block";
+  } else {
+    alert("Wrong Password");
+  }
+}
+</script>
+
+</body>
+</html>
